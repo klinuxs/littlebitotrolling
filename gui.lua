@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Backround = Instance.new("Frame")
 local CreditsButton = Instance.new("TextButton")
@@ -25,12 +20,18 @@ local FixdMarket = Instance.new("TextButton")
 local Exploits = Instance.new("Frame")
 local QuestExploit = Instance.new("TextButton")
 local LegitHitbox = Instance.new("TextButton")
-local Test = Instance.new("TextButton")
-local Credits = Instance.new("Frame")
+local Walkspeed = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+local NormalHitbox = Instance.new("TextButton")
+local JumpPower = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
+local fly = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
+local Credits = Instance.new("Frame")
 local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -45,7 +46,7 @@ Backround.BorderSizePixel = 0
 Backround.Position = UDim2.new(0.200415373, 0, 0.144427001, 0)
 Backround.Size = UDim2.new(0, 467, 0, 193)
 Backround.Active = true
-Backround.Draggable	= true
+Backround.Draggable = true
 
 CreditsButton.Name = "CreditsButton"
 CreditsButton.Parent = Backround
@@ -240,13 +241,12 @@ Exploits.BackgroundTransparency = 1.000
 Exploits.BorderSizePixel = 0
 Exploits.Position = UDim2.new(0, 0, 0.186528504, 0)
 Exploits.Size = UDim2.new(0, 465, 0, 157)
-Exploits.Visible = false
 
 QuestExploit.Name = "Quest Exploit"
 QuestExploit.Parent = Exploits
 QuestExploit.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 QuestExploit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-QuestExploit.Position = UDim2.new(0.0279569887, 0, 0.0700636953, 0)
+QuestExploit.Position = UDim2.new(0.35913974, 0, 0.0700636953, 0)
 QuestExploit.Size = UDim2.new(0, 130, 0, 25)
 QuestExploit.Font = Enum.Font.SourceSans
 QuestExploit.Text = "Quest Exploit"
@@ -257,23 +257,95 @@ LegitHitbox.Name = "Legit Hitbox"
 LegitHitbox.Parent = Exploits
 LegitHitbox.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 LegitHitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LegitHitbox.Position = UDim2.new(0.361290306, 0, 0.0700636506, 0)
+LegitHitbox.Position = UDim2.new(0.0279570222, 0, 0.0700636208, 0)
 LegitHitbox.Size = UDim2.new(0, 130, 0, 25)
 LegitHitbox.Font = Enum.Font.SourceSans
 LegitHitbox.Text = "Legit Hitbox"
 LegitHitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
 LegitHitbox.TextSize = 14.000
 
-Test.Name = "Test"
-Test.Parent = Exploits
-Test.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Test.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Test.Position = UDim2.new(0.694623649, 0, 0.0700636506, 0)
-Test.Size = UDim2.new(0, 130, 0, 25)
-Test.Font = Enum.Font.SourceSans
-Test.Text = "WIP"
-Test.TextColor3 = Color3.fromRGB(255, 255, 255)
-Test.TextSize = 14.000
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = Exploits
+Walkspeed.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Walkspeed.BorderColor3 = Color3.fromRGB(88, 88, 88)
+Walkspeed.Position = UDim2.new(0.0236559212, 0, 0.79617852, 0)
+Walkspeed.Size = UDim2.new(0, 20, 0, 20)
+Walkspeed.Font = Enum.Font.SourceSans
+Walkspeed.Text = ""
+Walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.TextSize = 14.000
+
+TextLabel.Parent = Walkspeed
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(1.35000002, 0, 0.099999994, 0)
+TextLabel.Size = UDim2.new(0, 54, 0, 15)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Walkspeed"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+NormalHitbox.Name = "Normal Hitbox"
+NormalHitbox.Parent = Exploits
+NormalHitbox.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+NormalHitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NormalHitbox.Position = UDim2.new(0.69462359, 0, 0.0700636953, 0)
+NormalHitbox.Size = UDim2.new(0, 130, 0, 25)
+NormalHitbox.Font = Enum.Font.SourceSans
+NormalHitbox.Text = "Normal Hitbox"
+NormalHitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+NormalHitbox.TextSize = 14.000
+
+JumpPower.Name = "Jump Power"
+JumpPower.Parent = Exploits
+JumpPower.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+JumpPower.BorderColor3 = Color3.fromRGB(88, 88, 88)
+JumpPower.Position = UDim2.new(0.217204303, 0, 0.796178579, 0)
+JumpPower.Size = UDim2.new(0, 20, 0, 20)
+JumpPower.Font = Enum.Font.SourceSans
+JumpPower.Text = ""
+JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.TextSize = 14.000
+
+TextLabel_2.Parent = JumpPower
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(1.35000002, 0, 0.099999994, 0)
+TextLabel_2.Size = UDim2.new(0, 54, 0, 15)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Jump Power"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+fly.Name = "fly"
+fly.Parent = Exploits
+fly.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+fly.BorderColor3 = Color3.fromRGB(88, 88, 88)
+fly.Position = UDim2.new(0.406451583, 0, 0.796178579, 0)
+fly.Size = UDim2.new(0, 20, 0, 20)
+fly.Font = Enum.Font.SourceSans
+fly.Text = ""
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextSize = 14.000
+
+TextLabel_3.Parent = fly
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(1.35000002, 0, 0.099999994, 0)
+TextLabel_3.Size = UDim2.new(0, 54, 0, 15)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Fly"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 
 Credits.Name = "Credits"
 Credits.Parent = Backround
@@ -282,58 +354,59 @@ Credits.BackgroundTransparency = 1.000
 Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(0.00213675317, 0, 0.186528504, 0)
 Credits.Size = UDim2.new(0, 466, 0, 157)
-
-TextLabel.Parent = Credits
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.00214592274, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 467, 0, 157)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Cool people who made this"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 20.000
-TextLabel.TextWrapped = true
-TextLabel.TextYAlignment = Enum.TextYAlignment.Top
-
-TextLabel_2.Parent = Credits
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.351931334, 0, 0.388535023, 0)
-TextLabel_2.Size = UDim2.new(0, 137, 0, 35)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "gangsta#8374"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 28.000
-TextLabel_2.TextWrapped = true
-
-TextLabel_3.Parent = Credits
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.349785447, 0, 0.165605083, 0)
-TextLabel_3.Size = UDim2.new(0, 137, 0, 35)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Indigo#6088"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 23.000
-TextLabel_3.TextWrapped = true
+Credits.Visible = false
 
 TextLabel_4.Parent = Credits
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.28111589, 0, 0.611464977, 0)
-TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Position = UDim2.new(-0.00214592274, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 467, 0, 157)
 TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Close/Open button is Right Control"
+TextLabel_4.Text = "Cool people who made this"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 31.000
+TextLabel_4.TextSize = 20.000
 TextLabel_4.TextWrapped = true
+TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_5.Parent = Credits
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.351931334, 0, 0.388535023, 0)
+TextLabel_5.Size = UDim2.new(0, 137, 0, 35)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "gangsta#8374"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 28.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Credits
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.349785447, 0, 0.165605083, 0)
+TextLabel_6.Size = UDim2.new(0, 137, 0, 35)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Indigo#6088"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 23.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = Credits
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.28111589, 0, 0.611464977, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Close/Open button is Right Control"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 31.000
+TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function ESHJ_fake_script() -- CreditsButton.LocalScript 
+local function TBQJG_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -342,8 +415,8 @@ local function ESHJ_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Exploits.Visible = false
 	end)
 end
-coroutine.wrap(ESHJ_fake_script)()
-local function EZMIJ_fake_script() -- ExploitsButton.LocalScript 
+coroutine.wrap(TBQJG_fake_script)()
+local function OVKHQI_fake_script() -- ExploitsButton.LocalScript 
 	local script = Instance.new('LocalScript', ExploitsButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -352,8 +425,8 @@ local function EZMIJ_fake_script() -- ExploitsButton.LocalScript
 		script.Parent.Parent.Exploits.Visible = true
 	end)
 end
-coroutine.wrap(EZMIJ_fake_script)()
-local function NYQMSAI_fake_script() -- TeleportsButton.LocalScript 
+coroutine.wrap(OVKHQI_fake_script)()
+local function MOWCM_fake_script() -- TeleportsButton.LocalScript 
 	local script = Instance.new('LocalScript', TeleportsButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -362,8 +435,8 @@ local function NYQMSAI_fake_script() -- TeleportsButton.LocalScript
 		script.Parent.Parent.Exploits.Visible = false
 	end)
 end
-coroutine.wrap(NYQMSAI_fake_script)()
-local function ATIDSWZ_fake_script() -- TrollHubBLOODLUST.LocalScript 
+coroutine.wrap(MOWCM_fake_script)()
+local function XEHTE_fake_script() -- TrollHubBLOODLUST.LocalScript 
 	local script = Instance.new('LocalScript', TrollHubBLOODLUST)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end;
@@ -371,8 +444,8 @@ local function ATIDSWZ_fake_script() -- TrollHubBLOODLUST.LocalScript
 	while wait(0.1)do
 		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1) counter = counter + 0.01 end;
 end
-coroutine.wrap(ATIDSWZ_fake_script)()
-local function WYBCR_fake_script() -- Backround.LocalScript 
+coroutine.wrap(XEHTE_fake_script)()
+local function BETF_fake_script() -- Backround.LocalScript 
 	local script = Instance.new('LocalScript', Backround)
 
 	local frame = script.Parent 
@@ -387,8 +460,8 @@ local function WYBCR_fake_script() -- Backround.LocalScript
 	
 	end)
 end
-coroutine.wrap(WYBCR_fake_script)()
-local function YSTMX_fake_script() -- WeaponsDealer1.LocalScript 
+coroutine.wrap(BETF_fake_script)()
+local function EICAKTM_fake_script() -- WeaponsDealer1.LocalScript 
 	local script = Instance.new('LocalScript', WeaponsDealer1)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -398,8 +471,8 @@ local function YSTMX_fake_script() -- WeaponsDealer1.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(YSTMX_fake_script)()
-local function LZSRSKP_fake_script() -- WeaponsDealer3.LocalScript 
+coroutine.wrap(EICAKTM_fake_script)()
+local function ULHGTUD_fake_script() -- WeaponsDealer3.LocalScript 
 	local script = Instance.new('LocalScript', WeaponsDealer3)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -409,8 +482,8 @@ local function LZSRSKP_fake_script() -- WeaponsDealer3.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(LZSRSKP_fake_script)()
-local function PZNJV_fake_script() -- WeaponsDealer2.LocalScript 
+coroutine.wrap(ULHGTUD_fake_script)()
+local function MYOKVJG_fake_script() -- WeaponsDealer2.LocalScript 
 	local script = Instance.new('LocalScript', WeaponsDealer2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -420,8 +493,8 @@ local function PZNJV_fake_script() -- WeaponsDealer2.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(PZNJV_fake_script)()
-local function ATQJXI_fake_script() -- Atm1.LocalScript 
+coroutine.wrap(MYOKVJG_fake_script)()
+local function HIAJZAO_fake_script() -- Atm1.LocalScript 
 	local script = Instance.new('LocalScript', Atm1)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -431,8 +504,8 @@ local function ATQJXI_fake_script() -- Atm1.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(ATQJXI_fake_script)()
-local function GDSXPNJ_fake_script() -- Atm2.LocalScript 
+coroutine.wrap(HIAJZAO_fake_script)()
+local function MFNH_fake_script() -- Atm2.LocalScript 
 	local script = Instance.new('LocalScript', Atm2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -442,8 +515,8 @@ local function GDSXPNJ_fake_script() -- Atm2.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(GDSXPNJ_fake_script)()
-local function UXQEZFC_fake_script() -- Atm3.LocalScript 
+coroutine.wrap(MFNH_fake_script)()
+local function JJHWNI_fake_script() -- Atm3.LocalScript 
 	local script = Instance.new('LocalScript', Atm3)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -453,8 +526,8 @@ local function UXQEZFC_fake_script() -- Atm3.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(UXQEZFC_fake_script)()
-local function AWGRP_fake_script() -- Quests.LocalScript 
+coroutine.wrap(JJHWNI_fake_script)()
+local function XRTGCS_fake_script() -- Quests.LocalScript 
 	local script = Instance.new('LocalScript', Quests)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -464,8 +537,8 @@ local function AWGRP_fake_script() -- Quests.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(AWGRP_fake_script)()
-local function TDKBN_fake_script() -- SafeSpot.LocalScript 
+coroutine.wrap(XRTGCS_fake_script)()
+local function NCPEU_fake_script() -- SafeSpot.LocalScript 
 	local script = Instance.new('LocalScript', SafeSpot)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -475,8 +548,8 @@ local function TDKBN_fake_script() -- SafeSpot.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(TDKBN_fake_script)()
-local function NEOL_fake_script() -- Armory.LocalScript 
+coroutine.wrap(NCPEU_fake_script)()
+local function DUFKKAO_fake_script() -- Armory.LocalScript 
 	local script = Instance.new('LocalScript', Armory)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -486,8 +559,8 @@ local function NEOL_fake_script() -- Armory.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(NEOL_fake_script)()
-local function HYBU_fake_script() -- Quests2.LocalScript 
+coroutine.wrap(DUFKKAO_fake_script)()
+local function TONIDT_fake_script() -- Quests2.LocalScript 
 	local script = Instance.new('LocalScript', Quests2)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -497,8 +570,8 @@ local function HYBU_fake_script() -- Quests2.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(HYBU_fake_script)()
-local function IRMMWDU_fake_script() -- Roof.LocalScript 
+coroutine.wrap(TONIDT_fake_script)()
+local function OVBXEL_fake_script() -- Roof.LocalScript 
 	local script = Instance.new('LocalScript', Roof)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -508,8 +581,8 @@ local function IRMMWDU_fake_script() -- Roof.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(IRMMWDU_fake_script)()
-local function TKXLM_fake_script() -- FixdMarket.LocalScript 
+coroutine.wrap(OVBXEL_fake_script)()
+local function SSVQ_fake_script() -- FixdMarket.LocalScript 
 	local script = Instance.new('LocalScript', FixdMarket)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -519,27 +592,214 @@ local function TKXLM_fake_script() -- FixdMarket.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(TKXLM_fake_script)()
-local function QMBRMPE_fake_script() -- QuestExploit.LocalScript 
+coroutine.wrap(SSVQ_fake_script)()
+local function ONSMRPH_fake_script() -- QuestExploit.LocalScript 
 	local script = Instance.new('LocalScript', QuestExploit)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/fluffle2/littlebitotrolling/main/questexploit.lua'))()
 	end)
 end
-coroutine.wrap(QMBRMPE_fake_script)()
-local function BKRP_fake_script() -- LegitHitbox.LocalScript 
+coroutine.wrap(ONSMRPH_fake_script)()
+local function EJSXUZP_fake_script() -- LegitHitbox.LocalScript 
 	local script = Instance.new('LocalScript', LegitHitbox)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/fluffle2/littlebitotrolling/main/hitboxes.lua'))()
 	end)
 end
-coroutine.wrap(BKRP_fake_script)()
-local function YWFLWU_fake_script() -- Backround.LocalScript 
+coroutine.wrap(EJSXUZP_fake_script)()
+local function EZWJK_fake_script() -- Walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', Walkspeed)
+
+	toggle = false
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	
+		if toggle == true then
+			toggle = false
+		else
+			toggle = true
+		end
+		if toggle == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+		end
+	
+		if toggle == true then
+			getgenv().WalkSpeedValue = 200; --set your desired walkspeed here
+			local Player = game:service'Players'.LocalPlayer;
+			Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+				Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+			end)
+			Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+		end
+		if toggle == false then
+			getgenv().WalkSpeedValue = 25; --set your desired walkspeed here
+			local Player = game:service'Players'.LocalPlayer;
+			Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+				Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+			end)
+			Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+		end
+	end)
+	
+	
+end
+coroutine.wrap(EZWJK_fake_script)()
+local function SCPC_fake_script() -- NormalHitbox.LocalScript 
+	local script = Instance.new('LocalScript', NormalHitbox)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/fluffle2/littlebitotrolling/main/nhitbox.lua'))()
+	end)
+end
+coroutine.wrap(SCPC_fake_script)()
+local function MURTC_fake_script() -- JumpPower.LocalScript 
+	local script = Instance.new('LocalScript', JumpPower)
+
+	toggle = false
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	
+		if toggle == true then
+			toggle = false
+		else
+			toggle = true
+		end
+		if toggle == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+		end
+	
+		if toggle == true then
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+		end
+		if toggle == false then
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 35
+		end
+	end)
+	
+	
+end
+coroutine.wrap(MURTC_fake_script)()
+local function SXZO_fake_script() -- fly.LocalScript 
+	local script = Instance.new('LocalScript', fly)
+
+	toggle = false
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	
+		if toggle == true then
+			toggle = false
+		else
+			toggle = true
+		end
+		if toggle == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+		end
+	
+		if toggle == true then
+			repeat wait()
+			until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+			local mouse = game.Players.LocalPlayer:GetMouse()
+			repeat wait() until mouse
+			local plr = game.Players.LocalPlayer
+			local torso = plr.Character.Torso
+			local flying = true
+			local deb = true
+			local ctrl = {f = 0, b = 0, l = 0, r = 0}
+			local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+			local maxspeed = 50
+			local speed = 0
+	
+			function Fly()
+				local bg = Instance.new("BodyGyro", torso)
+				bg.P = 9e4
+				bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+				bg.cframe = torso.CFrame
+				local bv = Instance.new("BodyVelocity", torso)
+				bv.velocity = Vector3.new(0,0.1,0)
+				bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+				repeat wait()
+					plr.Character.Humanoid.PlatformStand = true
+					if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+						speed = speed+.5+(speed/maxspeed)
+						if speed > maxspeed then
+							speed = maxspeed
+						end
+					elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+						speed = speed-1
+						if speed < 0 then
+							speed = 0
+						end
+					end
+					if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+						bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+						lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+					elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+						bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+					else
+						bv.velocity = Vector3.new(0,0.1,0)
+					end
+					bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+				until not flying
+				ctrl = {f = 0, b = 0, l = 0, r = 0}
+				lastctrl = {f = 0, b = 0, l = 0, r = 0}
+				speed = 0
+				bg:Destroy()
+				bv:Destroy()
+				plr.Character.Humanoid.PlatformStand = false
+			end
+			mouse.KeyDown:connect(function(key)
+				if key:lower() == "l" then
+					if flying then flying = false
+					else
+						flying = true
+						Fly()
+					end
+				elseif key:lower() == "w" then
+					ctrl.f = 1
+				elseif key:lower() == "s" then
+					ctrl.b = -1
+				elseif key:lower() == "a" then
+					ctrl.l = -1
+				elseif key:lower() == "d" then
+					ctrl.r = 1
+				end
+			end)
+			mouse.KeyUp:connect(function(key)
+				if key:lower() == "w" then
+					ctrl.f = 0
+				elseif key:lower() == "s" then
+					ctrl.b = 0
+				elseif key:lower() == "a" then
+					ctrl.l = 0
+				elseif key:lower() == "d" then
+					ctrl.r = 0
+				end
+			end)
+			Fly()
+		end
+		if toggle == false then
+	
+		end
+	end)
+	
+	
+end
+coroutine.wrap(SXZO_fake_script)()
+local function GSRQOL_fake_script() -- Backround.LocalScript 
 	local script = Instance.new('LocalScript', Backround)
 
 	Frame.Draggable = true
 	Frame.Active = true
 end
-coroutine.wrap(YWFLWU_fake_script)()
+coroutine.wrap(GSRQOL_fake_script)()
