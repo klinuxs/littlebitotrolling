@@ -14,12 +14,12 @@ local Field = Instance.new("TextButton")
 local Gunstore = Instance.new("TextButton")
 local Exploits = Instance.new("Frame")
 local InfiniteAmmo = Instance.new("TextButton")
-local KillinGunstore = Instance.new("TextButton")
-local EnableJumping = Instance.new("TextButton")
-local EnableJumping_2 = Instance.new("TextLabel")
 local Alwaysrun = Instance.new("TextButton")
+local EnableJumping = Instance.new("TextLabel")
+local EnableJumping_2 = Instance.new("TextButton")
 local EnableJumping_3 = Instance.new("TextLabel")
-local AutoMoneyCollect = Instance.new("TextButton")
+local KillinGunstore = Instance.new("TextButton")
+local Parvus = Instance.new("TextButton")
 local Credits = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -138,43 +138,6 @@ InfiniteAmmo.Text = "Infinite Ammo"
 InfiniteAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfiniteAmmo.TextSize = 14.000
 
-KillinGunstore.Name = "Kill in Gunstore"
-KillinGunstore.Parent = Exploits
-KillinGunstore.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-KillinGunstore.BorderColor3 = Color3.fromRGB(0, 0, 0)
-KillinGunstore.Position = UDim2.new(0.361290276, 0, 0.0636942685, 0)
-KillinGunstore.Size = UDim2.new(0, 130, 0, 25)
-KillinGunstore.Font = Enum.Font.SourceSans
-KillinGunstore.Text = "Kill in Gunstore"
-KillinGunstore.TextColor3 = Color3.fromRGB(255, 255, 255)
-KillinGunstore.TextSize = 14.000
-
-EnableJumping.Name = "Enable Jumping"
-EnableJumping.Parent = Exploits
-EnableJumping.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-EnableJumping.BorderColor3 = Color3.fromRGB(88, 88, 88)
-EnableJumping.Position = UDim2.new(0.0215053707, 0, 0.815286875, 0)
-EnableJumping.Size = UDim2.new(0, 20, 0, 20)
-EnableJumping.Font = Enum.Font.SourceSans
-EnableJumping.Text = ""
-EnableJumping.TextColor3 = Color3.fromRGB(255, 255, 255)
-EnableJumping.TextSize = 14.000
-
-EnableJumping_2.Name = "Enable Jumping"
-EnableJumping_2.Parent = EnableJumping
-EnableJumping_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EnableJumping_2.BackgroundTransparency = 1.000
-EnableJumping_2.BorderSizePixel = 0
-EnableJumping_2.Position = UDim2.new(1.35000002, 0, 0.099999994, 0)
-EnableJumping_2.Size = UDim2.new(0, 54, 0, 15)
-EnableJumping_2.Font = Enum.Font.SourceSans
-EnableJumping_2.Text = "Enable Jumping"
-EnableJumping_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-EnableJumping_2.TextScaled = true
-EnableJumping_2.TextSize = 14.000
-EnableJumping_2.TextWrapped = true
-EnableJumping_2.TextXAlignment = Enum.TextXAlignment.Left
-
 Alwaysrun.Name = "Always run"
 Alwaysrun.Parent = Exploits
 Alwaysrun.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -186,31 +149,68 @@ Alwaysrun.Text = ""
 Alwaysrun.TextColor3 = Color3.fromRGB(255, 255, 255)
 Alwaysrun.TextSize = 14.000
 
+EnableJumping.Name = "Enable Jumping"
+EnableJumping.Parent = Alwaysrun
+EnableJumping.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnableJumping.BackgroundTransparency = 1.000
+EnableJumping.BorderSizePixel = 0
+EnableJumping.Position = UDim2.new(1.35000002, 0, 0.099999994, 0)
+EnableJumping.Size = UDim2.new(0, 54, 0, 15)
+EnableJumping.Font = Enum.Font.SourceSans
+EnableJumping.Text = "Always Run"
+EnableJumping.TextColor3 = Color3.fromRGB(255, 255, 255)
+EnableJumping.TextScaled = true
+EnableJumping.TextSize = 14.000
+EnableJumping.TextWrapped = true
+EnableJumping.TextXAlignment = Enum.TextXAlignment.Left
+
+EnableJumping_2.Name = "Enable Jumping"
+EnableJumping_2.Parent = Exploits
+EnableJumping_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+EnableJumping_2.BorderColor3 = Color3.fromRGB(88, 88, 88)
+EnableJumping_2.Position = UDim2.new(0.0215053707, 0, 0.815286875, 0)
+EnableJumping_2.Size = UDim2.new(0, 20, 0, 20)
+EnableJumping_2.Font = Enum.Font.SourceSans
+EnableJumping_2.Text = ""
+EnableJumping_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+EnableJumping_2.TextSize = 14.000
+
 EnableJumping_3.Name = "Enable Jumping"
-EnableJumping_3.Parent = Alwaysrun
+EnableJumping_3.Parent = EnableJumping_2
 EnableJumping_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 EnableJumping_3.BackgroundTransparency = 1.000
 EnableJumping_3.BorderSizePixel = 0
 EnableJumping_3.Position = UDim2.new(1.35000002, 0, 0.099999994, 0)
 EnableJumping_3.Size = UDim2.new(0, 54, 0, 15)
 EnableJumping_3.Font = Enum.Font.SourceSans
-EnableJumping_3.Text = "Always Run"
+EnableJumping_3.Text = "Enable Jumping"
 EnableJumping_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 EnableJumping_3.TextScaled = true
 EnableJumping_3.TextSize = 14.000
 EnableJumping_3.TextWrapped = true
 EnableJumping_3.TextXAlignment = Enum.TextXAlignment.Left
 
-AutoMoneyCollect.Name = "Auto Money Collect"
-AutoMoneyCollect.Parent = Exploits
-AutoMoneyCollect.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-AutoMoneyCollect.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoMoneyCollect.Position = UDim2.new(0.69462359, 0, 0.0636942685, 0)
-AutoMoneyCollect.Size = UDim2.new(0, 130, 0, 25)
-AutoMoneyCollect.Font = Enum.Font.SourceSans
-AutoMoneyCollect.Text = "Auto Money Collect"
-AutoMoneyCollect.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoMoneyCollect.TextSize = 14.000
+KillinGunstore.Name = "Kill in Gunstore"
+KillinGunstore.Parent = Exploits
+KillinGunstore.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+KillinGunstore.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KillinGunstore.Position = UDim2.new(0.361290276, 0, 0.0636942685, 0)
+KillinGunstore.Size = UDim2.new(0, 130, 0, 25)
+KillinGunstore.Font = Enum.Font.SourceSans
+KillinGunstore.Text = "Kill in Gunstore"
+KillinGunstore.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillinGunstore.TextSize = 14.000
+
+Parvus.Name = "Parvus"
+Parvus.Parent = Exploits
+Parvus.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Parvus.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Parvus.Position = UDim2.new(0.69462359, 0, 0.0636942685, 0)
+Parvus.Size = UDim2.new(0, 130, 0, 25)
+Parvus.Font = Enum.Font.SourceSans
+Parvus.Text = "Parvus"
+Parvus.TextColor3 = Color3.fromRGB(255, 255, 255)
+Parvus.TextSize = 14.000
 
 Credits.Name = "Credits"
 Credits.Parent = Backround
@@ -272,7 +272,7 @@ Welcome.TextWrapped = true
 
 -- Scripts:
 
-local function HWJW_fake_script() -- CreditsButton.LocalScript 
+local function TZNE_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -282,8 +282,8 @@ local function HWJW_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Welcome.Visible = false
 	end)
 end
-coroutine.wrap(HWJW_fake_script)()
-local function RAVCP_fake_script() -- ExploitsButton.LocalScript 
+coroutine.wrap(TZNE_fake_script)()
+local function LFTJR_fake_script() -- ExploitsButton.LocalScript 
 	local script = Instance.new('LocalScript', ExploitsButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -293,8 +293,8 @@ local function RAVCP_fake_script() -- ExploitsButton.LocalScript
 		script.Parent.Parent.Welcome.Visible = false
 	end)
 end
-coroutine.wrap(RAVCP_fake_script)()
-local function DNHSI_fake_script() -- TeleportsButton.LocalScript 
+coroutine.wrap(LFTJR_fake_script)()
+local function QREAYJO_fake_script() -- TeleportsButton.LocalScript 
 	local script = Instance.new('LocalScript', TeleportsButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -304,8 +304,8 @@ local function DNHSI_fake_script() -- TeleportsButton.LocalScript
 		script.Parent.Parent.Welcome.Visible = false
 	end)
 end
-coroutine.wrap(DNHSI_fake_script)()
-local function DEIGEL_fake_script() -- TrollHubStreetShootout.LocalScript 
+coroutine.wrap(QREAYJO_fake_script)()
+local function GWGTAB_fake_script() -- TrollHubStreetShootout.LocalScript 
 	local script = Instance.new('LocalScript', TrollHubStreetShootout)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end;
@@ -313,8 +313,8 @@ local function DEIGEL_fake_script() -- TrollHubStreetShootout.LocalScript
 	while wait(0.1)do
 		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1) counter = counter + 0.01 end;
 end
-coroutine.wrap(DEIGEL_fake_script)()
-local function DATE_fake_script() -- Backround.LocalScript 
+coroutine.wrap(GWGTAB_fake_script)()
+local function HOJT_fake_script() -- Backround.LocalScript 
 	local script = Instance.new('LocalScript', Backround)
 
 	local frame = script.Parent 
@@ -329,8 +329,8 @@ local function DATE_fake_script() -- Backround.LocalScript
 	
 	end)
 end
-coroutine.wrap(DATE_fake_script)()
-local function AIVJ_fake_script() -- Field.LocalScript 
+coroutine.wrap(HOJT_fake_script)()
+local function OQAY_fake_script() -- Field.LocalScript 
 	local script = Instance.new('LocalScript', Field)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -340,8 +340,8 @@ local function AIVJ_fake_script() -- Field.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(AIVJ_fake_script)()
-local function ZDVY_fake_script() -- Gunstore.LocalScript 
+coroutine.wrap(OQAY_fake_script)()
+local function SFCOM_fake_script() -- Gunstore.LocalScript 
 	local script = Instance.new('LocalScript', Gunstore)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -351,8 +351,8 @@ local function ZDVY_fake_script() -- Gunstore.LocalScript
 		pl.CFrame = location
 	end)
 end
-coroutine.wrap(ZDVY_fake_script)()
-local function VBPE_fake_script() -- InfiniteAmmo.LocalScript 
+coroutine.wrap(SFCOM_fake_script)()
+local function QWMTMN_fake_script() -- InfiniteAmmo.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteAmmo)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -369,67 +369,8 @@ local function VBPE_fake_script() -- InfiniteAmmo.LocalScript
 		
 	end)
 end
-coroutine.wrap(VBPE_fake_script)()
-local function YPLR_fake_script() -- KillinGunstore.LocalScript 
-	local script = Instance.new('LocalScript', KillinGunstore)
-
-	script.Parent.MouseButton1Down:connect(function()
-	
-		local rem = game.Workspace
-		while true do
-			wait(0.1)
-			for i, v in pairs(rem:GetDescendants())
-			do if  v.Name =="Safezone" and v.Parent then
-					v:remove()
-				end
-			end
-		end
-	
-		local rem = game.Workspace
-		while true do
-			wait(0.1)
-			for i, v in pairs(rem:GetDescendants())
-			do if  v.Name =="NPCLookAt" and v.Parent then
-					v:remove()
-				end
-			end
-		end
-	
-	end)
-	
-end
-coroutine.wrap(YPLR_fake_script)()
-local function CTRQNAC_fake_script() -- EnableJumping.LocalScript 
-	local script = Instance.new('LocalScript', EnableJumping)
-
-	toggle = false
-	script.Parent.MouseButton1Down:Connect(function()
-	
-	
-		if toggle == true then
-			toggle = false
-		else
-			toggle = true
-		end
-		if toggle == true then
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-		end
-		if toggle == false then
-			script.Parent.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-		end
-	
-		if toggle == true then
-			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 26
-		end
-		if toggle == false then
-			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
-		end
-	end)
-	
-	
-end
-coroutine.wrap(CTRQNAC_fake_script)()
-local function FZDO_fake_script() -- Alwaysrun.LocalScript 
+coroutine.wrap(QWMTMN_fake_script)()
+local function NSGG_fake_script() -- Alwaysrun.LocalScript 
 	local script = Instance.new('LocalScript', Alwaysrun)
 
 	toggle = false
@@ -458,27 +399,75 @@ local function FZDO_fake_script() -- Alwaysrun.LocalScript
 	
 	
 end
-coroutine.wrap(FZDO_fake_script)()
-local function ZNRKBZI_fake_script() -- AutoMoneyCollect.LocalScript 
-	local script = Instance.new('LocalScript', AutoMoneyCollect)
+coroutine.wrap(NSGG_fake_script)()
+local function UZVLS_fake_script() -- EnableJumping_2.LocalScript 
+	local script = Instance.new('LocalScript', EnableJumping_2)
+
+	toggle = false
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	
+		if toggle == true then
+			toggle = false
+		else
+			toggle = true
+		end
+		if toggle == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		if toggle == false then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+		end
+	
+		if toggle == true then
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 26
+		end
+		if toggle == false then
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+		end
+	end)
+	
+	
+end
+coroutine.wrap(UZVLS_fake_script)()
+local function UCBCY_fake_script() -- KillinGunstore.LocalScript 
+	local script = Instance.new('LocalScript', KillinGunstore)
 
 	script.Parent.MouseButton1Down:connect(function()
-		local playerHead = game.Players.LocalPlayer.Character.Head
-		local RunService = game:GetService("RunService")
 	
-		RunService.RenderStepped:Connect(function(step)
-			for i, v in pairs(game.Workspace.CashOnDeath:GetDescendants())
-			do if v.Name =="TouchInterest" and v.Parent then
-					firetouchinterest(playerHead, v.Parent, 0)
-					wait(0.01)
-					firetouchinterest(playerHead, v.Parent, 1)
+		local rem = game.Workspace
+		while true do
+			wait(0.1)
+			for i, v in pairs(rem:GetDescendants())
+			do if  v.Name =="Safezone" and v.Parent then
+					v:remove()
 				end
 			end
-		end)
+		end
+	
+		local rem = game.Workspace
+		while true do
+			wait(0.1)
+			for i, v in pairs(rem:GetDescendants())
+			do if  v.Name =="NPCLookAt" and v.Parent then
+					v:remove()
+				end
+			end
+		end
+	
+	end)
+	
+end
+coroutine.wrap(UCBCY_fake_script)()
+local function VTJFQH_fake_script() -- Parvus.LocalScript 
+	local script = Instance.new('LocalScript', Parvus)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/klinuxs/Parvus/main/Universal.lua'))()
 	end)
 end
-coroutine.wrap(ZNRKBZI_fake_script)()
-local function YUWCF_fake_script() -- Backround.LocalScript 
+coroutine.wrap(VTJFQH_fake_script)()
+local function LLJHHQ_fake_script() -- Backround.LocalScript 
 	local script = Instance.new('LocalScript', Backround)
 
 	local Br = game.CoreGui.StreetShootout.Backround
@@ -486,8 +475,8 @@ local function YUWCF_fake_script() -- Backround.LocalScript
 	Br.Draggable = true
 	Br.Active = true
 end
-coroutine.wrap(YUWCF_fake_script)()
-local function URPCNS_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(LLJHHQ_fake_script)()
+local function XRXXSNP_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end;
@@ -495,4 +484,4 @@ local function URPCNS_fake_script() -- Welcome.LocalScript
 	while wait(0.1)do
 		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1) counter = counter + 0.01 end;
 end
-coroutine.wrap(URPCNS_fake_script)()
+coroutine.wrap(XRXXSNP_fake_script)()
